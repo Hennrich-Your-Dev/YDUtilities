@@ -60,7 +60,7 @@ public class Logger {
 			.replacingOccurrences(of: dateParam, with: dateformatter.string(from: Date()) )
 	}
 
-	func info(
+  public func info(
 		_ args: CVarArg,
 		function: String = #function,
 		line: Int = #line,
@@ -73,7 +73,7 @@ public class Logger {
 		}
 	}
 
-	func error(
+  public func error(
 		_ args: CVarArg,
 		function: String = #function,
 		line: Int = #line,
@@ -86,7 +86,7 @@ public class Logger {
 		}
 	}
 
-	func warning(
+  public func warning(
 		_ args: CVarArg,
 		function: String = #function,
 		line: Int = #line,
@@ -99,7 +99,7 @@ public class Logger {
 		}
 	}
 
-	func debug(
+	public func debug(
 		_ args: CVarArg,
 		function: String = #function,
 		line: Int = #line,
