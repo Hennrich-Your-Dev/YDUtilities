@@ -6,5 +6,6 @@ target 'YDUtilities' do
   use_frameworks!
 
   # Pods for YDUtilities
+  pod "Alamofire", "~> 4.0"
 
 end

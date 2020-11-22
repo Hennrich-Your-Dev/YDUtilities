@@ -12,6 +12,7 @@
 		C127760F254748F200DBC6C4 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760C254748F200DBC6C4 /* Binder.swift */; };
 		C1277610254748F200DBC6C4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760D254748F200DBC6C4 /* Logger.swift */; };
 		C1277611254748F200DBC6C4 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760E254748F200DBC6C4 /* Throwable.swift */; };
+		C1866679256AB4D000ACAD97 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1866678256AB4D000ACAD97 /* Connectivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C127760C254748F200DBC6C4 /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		C127760D254748F200DBC6C4 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		C127760E254748F200DBC6C4 /* Throwable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
+		C1866678256AB4D000ACAD97 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		FF5104D59F82C57EC8AB958F /* Pods-YDUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDUtilities.debug.xcconfig"; path = "Target Support Files/Pods-YDUtilities/Pods-YDUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +46,6 @@
 				FF5104D59F82C57EC8AB958F /* Pods-YDUtilities.debug.xcconfig */,
 				446AC2AB5D857A9B73282BF3 /* Pods-YDUtilities.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +83,7 @@
 				C127760C254748F200DBC6C4 /* Binder.swift */,
 				C127760D254748F200DBC6C4 /* Logger.swift */,
 				C127760E254748F200DBC6C4 /* Throwable.swift */,
+				C1866678256AB4D000ACAD97 /* Connectivity.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -199,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1866679256AB4D000ACAD97 /* Connectivity.swift in Sources */,
 				C127760F254748F200DBC6C4 /* Binder.swift in Sources */,
 				C1277611254748F200DBC6C4 /* Throwable.swift in Sources */,
 				C1277610254748F200DBC6C4 /* Logger.swift in Sources */,

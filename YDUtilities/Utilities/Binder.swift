@@ -65,7 +65,7 @@ public class Binder<T> {
         if self.justOneFire {
           self.listener = nil
         }
-      }
+      }w
     }
   }
 }
