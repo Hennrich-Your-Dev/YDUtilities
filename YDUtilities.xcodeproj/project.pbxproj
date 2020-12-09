@@ -12,6 +12,8 @@
 		C127760F254748F200DBC6C4 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760C254748F200DBC6C4 /* Binder.swift */; };
 		C1277610254748F200DBC6C4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760D254748F200DBC6C4 /* Logger.swift */; };
 		C1277611254748F200DBC6C4 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760E254748F200DBC6C4 /* Throwable.swift */; };
+		C13514A9258108130018EA0E /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13514A8258108130018EA0E /* ServiceClient.swift */; };
+		C13514AD258109A90018EA0E /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13514AC258109A90018EA0E /* ServiceError.swift */; };
 		C1866679256AB4D000ACAD97 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1866678256AB4D000ACAD97 /* Connectivity.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		C127760C254748F200DBC6C4 /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		C127760D254748F200DBC6C4 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		C127760E254748F200DBC6C4 /* Throwable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
+		C13514A8258108130018EA0E /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		C13514AC258109A90018EA0E /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		C1866678256AB4D000ACAD97 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		FF5104D59F82C57EC8AB958F /* Pods-YDUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDUtilities.debug.xcconfig"; path = "Target Support Files/Pods-YDUtilities/Pods-YDUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,12 +84,46 @@
 		C127760B2547488700DBC6C4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C127760C254748F200DBC6C4 /* Binder.swift */,
-				C127760D254748F200DBC6C4 /* Logger.swift */,
-				C127760E254748F200DBC6C4 /* Throwable.swift */,
-				C1866678256AB4D000ACAD97 /* Connectivity.swift */,
+				C13514A4258107940018EA0E /* Bind */,
+				C13514A7258107C00018EA0E /* Codable */,
+				C13514A6258107AF0018EA0E /* Log */,
+				C13514A52581079F0018EA0E /* Service */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C13514A4258107940018EA0E /* Bind */ = {
+			isa = PBXGroup;
+			children = (
+				C127760C254748F200DBC6C4 /* Binder.swift */,
+			);
+			path = Bind;
+			sourceTree = "<group>";
+		};
+		C13514A52581079F0018EA0E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C1866678256AB4D000ACAD97 /* Connectivity.swift */,
+				C13514A8258108130018EA0E /* ServiceClient.swift */,
+				C13514AC258109A90018EA0E /* ServiceError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C13514A6258107AF0018EA0E /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C127760D254748F200DBC6C4 /* Logger.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C13514A7258107C00018EA0E /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				C127760E254748F200DBC6C4 /* Throwable.swift */,
+			);
+			path = Codable;
 			sourceTree = "<group>";
 		};
 		EEE8283E534DA584C45D3114 /* Frameworks */ = {
@@ -201,6 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13514AD258109A90018EA0E /* ServiceError.swift in Sources */,
+				C13514A9258108130018EA0E /* ServiceClient.swift in Sources */,
 				C1866679256AB4D000ACAD97 /* Connectivity.swift in Sources */,
 				C127760F254748F200DBC6C4 /* Binder.swift in Sources */,
 				C1277611254748F200DBC6C4 /* Throwable.swift in Sources */,
