@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum YDServiceError: Error {
+public enum YDServiceError: Error {
   case badRequest             // Status code 400
   case notFound               // Status code 404
   case internalServerError    // Status code 500

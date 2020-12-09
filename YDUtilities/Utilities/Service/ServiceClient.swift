@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 // MARK: Protocol
-protocol YDServiceClientDelegate: AnyObject {
+public protocol YDServiceClientDelegate: AnyObject {
   // default
   func request<T: Decodable>(
     withUrl: String,
@@ -55,7 +55,7 @@ protocol YDServiceClientDelegate: AnyObject {
 }
 
 // MARK: API
-class YDServiceClient {
+public class YDServiceClient {
   // MARK: Properties
   lazy var logger = Logger.forClass(Self.self)
   let httpRequest: SessionManager
@@ -105,7 +105,7 @@ class YDServiceClient {
 // MARK: Extend protocol
 extension YDServiceClient: YDServiceClientDelegate {
   // MARK: Default
-  func request<T: Decodable> (
+  public func request<T: Decodable> (
     withUrl: String,
     withMethod: HTTPMethod = .get,
     andParameters: Parameters? = nil,
@@ -161,7 +161,7 @@ extension YDServiceClient: YDServiceClientDelegate {
   }
 
   // MARK: With Headers
-  func request<T: Decodable> (
+  public func request<T: Decodable> (
     withUrl: String,
     withMethod: HTTPMethod = .get,
     withHeaders: HTTPHeaders? = nil,
@@ -219,7 +219,7 @@ extension YDServiceClient: YDServiceClientDelegate {
   }
 
   // MARK: With full response
-  func requestWithFullResponse(
+  public func requestWithFullResponse(
     withUrl: String,
     withMethod: HTTPMethod = .get,
     withHeaders: HTTPHeaders? = nil,
@@ -252,7 +252,7 @@ extension YDServiceClient: YDServiceClientDelegate {
   }
 
   // MARK: With Custom Decoder
-  func request<T: Decodable>(
+  public func request<T: Decodable>(
     withUrl: String,
     withMethod: HTTPMethod,
     andParameters: Parameters?,
@@ -309,7 +309,7 @@ extension YDServiceClient: YDServiceClientDelegate {
   }
 
   // MARK: Without cache request
-  func requestWithoutCache<T: Decodable> (
+  public func requestWithoutCache<T: Decodable> (
     withUrl: String,
     withMethod: HTTPMethod = .get,
     andParameters: Parameters? = nil,
