@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YDUtilities"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "YDUtilities."
 
   spec.license          = "MIT"

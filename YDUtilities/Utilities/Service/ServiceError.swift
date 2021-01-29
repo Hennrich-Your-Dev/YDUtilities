@@ -16,7 +16,7 @@ public enum YDServiceError: Error {
   case noService
   case unknow((message: String?, status: Int?))
 
-  var message: String {
+  public var message: String {
     switch self {
     case .badRequest:
       return "API inválida"
@@ -39,24 +39,24 @@ public enum YDServiceError: Error {
     }
   }
 //
-//  var type: YDServiceError {
-//    switch self {
-//    case .badRequest:
-//      return .badRequest
-//    case .notFound:
-//      return .notFound
-//    case .internalServerError:
-//      return .internalServerError
-//    case .cantCreateUrl:
-//      return .cantCreateUrl
-//    case .noService:
-//      return .noService
-//    case .unknow(let error):
-//      return .unknow(error: error)
-//    }
-//  }
+  var type: YDServiceError {
+    switch self {
+    case .badRequest:
+      return .badRequest
+    case .notFound:
+      return .notFound
+    case .internalServerError:
+      return .internalServerError
+    case .cantCreateUrl:
+      return .cantCreateUrl
+    case .noService:
+      return .noService
+    case .unknow(let tuple):
+      return .unknow(tuple)
+    }
+  }
 
-  var statusCode: Int? {
+  public var statusCode: Int? {
     switch self {
       case .badRequest:
         return 400
