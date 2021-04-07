@@ -18,6 +18,7 @@
 		C1866679256AB4D000ACAD97 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1866678256AB4D000ACAD97 /* Connectivity.swift */; };
 		C19B997725C99EF30002E696 /* FileManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B997625C99EF30002E696 /* FileManipulation.swift */; };
 		C1A2759B258B9C6B005740F9 /* QueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2759A258B9C6B005740F9 /* QueryString.swift */; };
+		C1FA6805261E38DC0063C21E /* UIStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA6804261E38DC0063C21E /* UIStateEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C1866678256AB4D000ACAD97 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		C19B997625C99EF30002E696 /* FileManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManipulation.swift; sourceTree = "<group>"; };
 		C1A2759A258B9C6B005740F9 /* QueryString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryString.swift; sourceTree = "<group>"; };
+		C1FA6804261E38DC0063C21E /* UIStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStateEnum.swift; sourceTree = "<group>"; };
 		FF5104D59F82C57EC8AB958F /* Pods-YDUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDUtilities.debug.xcconfig"; path = "Target Support Files/Pods-YDUtilities/Pods-YDUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				C13514A7258107C00018EA0E /* Codable */,
 				C13514A6258107AF0018EA0E /* Log */,
 				C13514A52581079F0018EA0E /* Service */,
+				C1FA6803261E389D0063C21E /* UIState */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -149,6 +152,14 @@
 				C19B997625C99EF30002E696 /* FileManipulation.swift */,
 			);
 			path = File;
+			sourceTree = "<group>";
+		};
+		C1FA6803261E389D0063C21E /* UIState */ = {
+			isa = PBXGroup;
+			children = (
+				C1FA6804261E38DC0063C21E /* UIStateEnum.swift */,
+			);
+			path = UIState;
 			sourceTree = "<group>";
 		};
 		EEE8283E534DA584C45D3114 /* Frameworks */ = {
@@ -272,6 +283,7 @@
 				C19B997725C99EF30002E696 /* FileManipulation.swift in Sources */,
 				C1277611254748F200DBC6C4 /* Throwable.swift in Sources */,
 				C1A2759B258B9C6B005740F9 /* QueryString.swift in Sources */,
+				C1FA6805261E38DC0063C21E /* UIStateEnum.swift in Sources */,
 				C1277610254748F200DBC6C4 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
