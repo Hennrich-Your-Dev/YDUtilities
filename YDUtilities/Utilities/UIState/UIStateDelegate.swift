@@ -12,3 +12,7 @@ public enum UIStateEnum {
   case loading
   case error
 }
+
+public protocol UIStateDelegate {
+  func changeUIState(with type: UIStateEnum)
+}
