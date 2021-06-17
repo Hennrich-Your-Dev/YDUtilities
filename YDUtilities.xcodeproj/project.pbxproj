@@ -14,6 +14,7 @@
 		C1277611254748F200DBC6C4 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760E254748F200DBC6C4 /* Throwable.swift */; };
 		C183CE6F25B08B3600B4F675 /* GenerateImageFromLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183CE6E25B08B3600B4F675 /* GenerateImageFromLetter.swift */; };
 		C19B997725C99EF30002E696 /* FileManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B997625C99EF30002E696 /* FileManipulation.swift */; };
+		C1F9E547267AE93E0042F617 /* YDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F9E546267AE93E0042F617 /* YDConstants.swift */; };
 		C1FA6805261E38DC0063C21E /* UIStateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA6804261E38DC0063C21E /* UIStateDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		C127760E254748F200DBC6C4 /* Throwable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
 		C183CE6E25B08B3600B4F675 /* GenerateImageFromLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageFromLetter.swift; sourceTree = "<group>"; };
 		C19B997625C99EF30002E696 /* FileManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManipulation.swift; sourceTree = "<group>"; };
+		C1F9E546267AE93E0042F617 /* YDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDConstants.swift; sourceTree = "<group>"; };
 		C1FA6804261E38DC0063C21E /* UIStateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStateDelegate.swift; sourceTree = "<group>"; };
 		FF5104D59F82C57EC8AB958F /* Pods-YDUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDUtilities.debug.xcconfig"; path = "Target Support Files/Pods-YDUtilities/Pods-YDUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,10 +86,11 @@
 		C127760B2547488700DBC6C4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C19B997525C99EE50002E696 /* File */,
-				C183CE6D25B08B1900B4F675 /* Image */,
 				C13514A4258107940018EA0E /* Bind */,
 				C13514A7258107C00018EA0E /* Codable */,
+				C1F9E545267AE8CD0042F617 /* Constants */,
+				C19B997525C99EE50002E696 /* File */,
+				C183CE6D25B08B1900B4F675 /* Image */,
 				C13514A6258107AF0018EA0E /* Log */,
 				C1FA6803261E389D0063C21E /* UIState */,
 			);
@@ -132,6 +135,14 @@
 				C19B997625C99EF30002E696 /* FileManipulation.swift */,
 			);
 			path = File;
+			sourceTree = "<group>";
+		};
+		C1F9E545267AE8CD0042F617 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C1F9E546267AE93E0042F617 /* YDConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		C1FA6803261E389D0063C21E /* UIState */ = {
@@ -258,6 +269,7 @@
 				C183CE6F25B08B3600B4F675 /* GenerateImageFromLetter.swift in Sources */,
 				C127760F254748F200DBC6C4 /* Binder.swift in Sources */,
 				C19B997725C99EF30002E696 /* FileManipulation.swift in Sources */,
+				C1F9E547267AE93E0042F617 /* YDConstants.swift in Sources */,
 				C1277611254748F200DBC6C4 /* Throwable.swift in Sources */,
 				C1FA6805261E38DC0063C21E /* UIStateDelegate.swift in Sources */,
 				C1277610254748F200DBC6C4 /* Logger.swift in Sources */,
