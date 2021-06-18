@@ -11,5 +11,6 @@ public enum YDConstants {
   // Notifications
   public struct Notification {
     public static let SpaceyNPSChangeValue = NSNotification.Name("YDSpaceyNPSChangeValue")
+    public static let SpaceyErrorTrigger = NSNotification.Name("SpaceyErrorTrigger")
   }
 }
