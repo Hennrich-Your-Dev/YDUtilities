@@ -12,6 +12,8 @@
 		C127760F254748F200DBC6C4 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760C254748F200DBC6C4 /* Binder.swift */; };
 		C1277610254748F200DBC6C4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760D254748F200DBC6C4 /* Logger.swift */; };
 		C1277611254748F200DBC6C4 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760E254748F200DBC6C4 /* Throwable.swift */; };
+		C149E80B2682B3770057F33E /* YDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C149E80A2682B3770057F33E /* YDManager.swift */; };
+		C149E80E2682B4100057F33E /* YDManager+PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C149E80D2682B4100057F33E /* YDManager+PushNotification.swift */; };
 		C183CE6F25B08B3600B4F675 /* GenerateImageFromLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183CE6E25B08B3600B4F675 /* GenerateImageFromLetter.swift */; };
 		C19B997725C99EF30002E696 /* FileManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B997625C99EF30002E696 /* FileManipulation.swift */; };
 		C1F9E547267AE93E0042F617 /* YDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F9E546267AE93E0042F617 /* YDConstants.swift */; };
@@ -27,6 +29,8 @@
 		C127760C254748F200DBC6C4 /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		C127760D254748F200DBC6C4 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		C127760E254748F200DBC6C4 /* Throwable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
+		C149E80A2682B3770057F33E /* YDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDManager.swift; sourceTree = "<group>"; };
+		C149E80D2682B4100057F33E /* YDManager+PushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YDManager+PushNotification.swift"; sourceTree = "<group>"; };
 		C183CE6E25B08B3600B4F675 /* GenerateImageFromLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageFromLetter.swift; sourceTree = "<group>"; };
 		C19B997625C99EF30002E696 /* FileManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManipulation.swift; sourceTree = "<group>"; };
 		C1F9E546267AE93E0042F617 /* YDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDConstants.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				C19B997525C99EE50002E696 /* File */,
 				C183CE6D25B08B1900B4F675 /* Image */,
 				C13514A6258107AF0018EA0E /* Log */,
+				C149E8092682B33F0057F33E /* Manager */,
 				C1FA6803261E389D0063C21E /* UIState */,
 			);
 			path = Utilities;
@@ -119,6 +124,23 @@
 				C127760E254748F200DBC6C4 /* Throwable.swift */,
 			);
 			path = Codable;
+			sourceTree = "<group>";
+		};
+		C149E8092682B33F0057F33E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C149E80C2682B39C0057F33E /* PushNotification */,
+				C149E80A2682B3770057F33E /* YDManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C149E80C2682B39C0057F33E /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				C149E80D2682B4100057F33E /* YDManager+PushNotification.swift */,
+			);
+			path = PushNotification;
 			sourceTree = "<group>";
 		};
 		C183CE6D25B08B1900B4F675 /* Image */ = {
@@ -268,11 +290,13 @@
 			files = (
 				C183CE6F25B08B3600B4F675 /* GenerateImageFromLetter.swift in Sources */,
 				C127760F254748F200DBC6C4 /* Binder.swift in Sources */,
+				C149E80B2682B3770057F33E /* YDManager.swift in Sources */,
 				C19B997725C99EF30002E696 /* FileManipulation.swift in Sources */,
 				C1F9E547267AE93E0042F617 /* YDConstants.swift in Sources */,
 				C1277611254748F200DBC6C4 /* Throwable.swift in Sources */,
 				C1FA6805261E38DC0063C21E /* UIStateDelegate.swift in Sources */,
 				C1277610254748F200DBC6C4 /* Logger.swift in Sources */,
+				C149E80E2682B4100057F33E /* YDManager+PushNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
