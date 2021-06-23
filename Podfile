@@ -15,4 +15,5 @@ target 'YDUtilities' do
   pod "Alamofire", "~> 4.0"
 
   pod "YDExtensions", "~> 1.3.0"
+  pod "YDB2WModels", "~> 1.3.0"
 end

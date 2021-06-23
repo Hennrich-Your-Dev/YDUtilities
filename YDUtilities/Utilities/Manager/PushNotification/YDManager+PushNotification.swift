@@ -9,20 +9,26 @@ import UIKit
 import UserNotifications
 
 public extension YDManager {
-  struct Notification {
-    public static let notificationCenter = UNUserNotificationCenter.current()
+  class Notification {
+    // MARK: Properties
+    static let shared = YDManager.Notification()
+    private let notificationCenter = UNUserNotificationCenter.current()
 
-    public static func getNotificationStatus(onCompleted completed: @escaping (Bool) -> Void) {
-      YDManager.Notification.notificationCenter.getNotificationSettings { settings in
+    // MARK: Init
+    private init() {}
+
+    // MARK: Actions
+    public func getNotificationStatus(onCompleted completed: @escaping (Bool) -> Void) {
+      notificationCenter.getNotificationSettings { settings in
         completed(settings.authorizationStatus == .authorized)
       }
     }
 
-    public static func requestNotificationPermission(onCompleted completed: @escaping (Bool) -> Void) {
+    public func requestNotificationPermission(onCompleted completed: @escaping (Bool) -> Void) {
       getNotificationStatus { authorized in
         if !authorized {
           let options: UNAuthorizationOptions = [.alert, .sound, .badge]
-          YDManager.Notification.notificationCenter
+          self.notificationCenter
             .requestAuthorization(options: options) { didAllow, error in
               completed(didAllow)
             }
@@ -32,14 +38,14 @@ public extension YDManager {
       }
     }
 
-    public static func scheduleLocalNotification(
+    public func scheduleLocalNotification(
       date: Date,
       title: String,
       message: String,
       mock: Bool = false,
       onCompleted completed: @escaping () -> Void
     ) {
-      let dateComponents = Calendar.current
+      let dateComponents = Foundation.Calendar.current
         .dateComponents([.month, .day, .hour, .minute], from: date)
 
       let content = UNMutableNotificationContent()
@@ -54,7 +60,7 @@ public extension YDManager {
           content: content,
           trigger: trigger
         )
-        YDManager.Notification.notificationCenter.add(request)
+        notificationCenter.add(request)
         completed()
         //
       } else {
@@ -65,7 +71,7 @@ public extension YDManager {
           content: content,
           trigger: trigger
         )
-        YDManager.Notification.notificationCenter.add(request)
+        notificationCenter.add(request)
         completed()
       }
     }

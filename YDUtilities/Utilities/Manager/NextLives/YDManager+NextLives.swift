@@ -21,7 +21,7 @@ public struct YDManagerScheduleLive: Codable {
 public extension YDManager {
   class NextLives {
     // MARK: Properties
-    public static let shared = YDManager.NextLives()
+    public  static let shared = YDManager.NextLives()
     private let defaults = UserDefaults.standard
     private var lives: [YDManagerScheduleLive] = []
 
@@ -41,7 +41,7 @@ public extension YDManager {
       var needToSave = false
 
       for (index, curr) in cleanLives.enumerated() {
-        guard let endTimePlusOne = Calendar.current.date(byAdding: .day, value: 1, to: curr.endTime)
+        guard let endTimePlusOne = Foundation.Calendar.current.date(byAdding: .day, value: 1, to: curr.endTime)
         else { continue }
 
         if endTimePlusOne.isInPast,
