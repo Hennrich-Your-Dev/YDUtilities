@@ -21,7 +21,7 @@ public struct YDManagerScheduleLive: Codable {
 public extension YDManager {
   class NextLives {
     // MARK: Properties
-    static let shared = YDManager.NextLives()
+    public static let shared = YDManager.NextLives()
     private let defaults = UserDefaults.standard
     private var lives: [YDManagerScheduleLive] = []
 
