@@ -11,7 +11,7 @@ import UserNotifications
 public extension YDManager {
   class Notification {
     // MARK: Properties
-    static let shared = YDManager.Notification()
+    public static let shared = YDManager.Notification()
     private let notificationCenter = UNUserNotificationCenter.current()
 
     // MARK: Init
