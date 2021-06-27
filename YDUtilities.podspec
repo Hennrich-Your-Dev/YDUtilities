@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YDUtilities"
-  spec.version      = "1.3.7"
+  spec.version      = "1.4.1"
   spec.summary      = "YDUtilities."
 
   spec.license          = "MIT"
@@ -23,6 +23,6 @@ Pod::Spec.new do |spec|
   spec.swift_version    = "5.0"
 
   spec.dependency "Alamofire", "~> 4.0"
-  spec.dependency "YDExtensions", "~> 1.3.0"
-  spec.dependency "YDB2WModels", "~> 1.3.0"
+  spec.dependency "YDExtensions", "~> 1.4.0"
+  spec.dependency "YDB2WModels", "~> 1.4.0"
 end
