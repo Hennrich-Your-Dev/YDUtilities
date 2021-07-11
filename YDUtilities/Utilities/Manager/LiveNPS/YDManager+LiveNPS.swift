@@ -58,12 +58,12 @@ public extension YDManager {
       save()
     }
 
-    public func checkIfExists(id: String, liveId: String) -> Bool {
-      return lives.firstIndex(
+    public func get(id: String, liveId: String) -> YDManagerLiveNPS? {
+      return lives.first(
         where: {
           $0.liveId == $0.liveId && $0.id == id
         }
-      ) != nil
+      )
     }
   }
 }
