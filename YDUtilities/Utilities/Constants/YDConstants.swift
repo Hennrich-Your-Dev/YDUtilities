@@ -26,5 +26,6 @@ public enum YDConstants {
   // UserDefaults
   public struct UserDefaults {
     public static let savedNextLives = "YDSavedNextLives"
+    public static let savedLiveNPS = "YDSavedLiveNPS"
   }
 }

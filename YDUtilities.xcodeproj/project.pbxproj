@@ -14,6 +14,7 @@
 		C1277611254748F200DBC6C4 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127760E254748F200DBC6C4 /* Throwable.swift */; };
 		C149E80B2682B3770057F33E /* YDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C149E80A2682B3770057F33E /* YDManager.swift */; };
 		C149E80E2682B4100057F33E /* YDManager+PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C149E80D2682B4100057F33E /* YDManager+PushNotification.swift */; };
+		C176BBEB269BA2C800347A9A /* YDManager+LiveNPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176BBEA269BA2C800347A9A /* YDManager+LiveNPS.swift */; };
 		C183CE6F25B08B3600B4F675 /* GenerateImageFromLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183CE6E25B08B3600B4F675 /* GenerateImageFromLetter.swift */; };
 		C19B997725C99EF30002E696 /* FileManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B997625C99EF30002E696 /* FileManipulation.swift */; };
 		C1EB436F2683B61E007F6113 /* YDManager+NextLives.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EB436E2683B61E007F6113 /* YDManager+NextLives.swift */; };
@@ -33,6 +34,7 @@
 		C127760E254748F200DBC6C4 /* Throwable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
 		C149E80A2682B3770057F33E /* YDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDManager.swift; sourceTree = "<group>"; };
 		C149E80D2682B4100057F33E /* YDManager+PushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YDManager+PushNotification.swift"; sourceTree = "<group>"; };
+		C176BBEA269BA2C800347A9A /* YDManager+LiveNPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YDManager+LiveNPS.swift"; sourceTree = "<group>"; };
 		C183CE6E25B08B3600B4F675 /* GenerateImageFromLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageFromLetter.swift; sourceTree = "<group>"; };
 		C19B997625C99EF30002E696 /* FileManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManipulation.swift; sourceTree = "<group>"; };
 		C1EB436E2683B61E007F6113 /* YDManager+NextLives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YDManager+NextLives.swift"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				C149E80A2682B3770057F33E /* YDManager.swift */,
 				C1EB43702683D046007F6113 /* Calendar */,
+				C176BBE9269BA2B700347A9A /* LiveNPS */,
 				C149E80C2682B39C0057F33E /* PushNotification */,
 				C1EB436D2683B600007F6113 /* NextLives */,
 			);
@@ -147,6 +150,14 @@
 				C149E80D2682B4100057F33E /* YDManager+PushNotification.swift */,
 			);
 			path = PushNotification;
+			sourceTree = "<group>";
+		};
+		C176BBE9269BA2B700347A9A /* LiveNPS */ = {
+			isa = PBXGroup;
+			children = (
+				C176BBEA269BA2C800347A9A /* YDManager+LiveNPS.swift */,
+			);
+			path = LiveNPS;
 			sourceTree = "<group>";
 		};
 		C183CE6D25B08B1900B4F675 /* Image */ = {
@@ -320,6 +331,7 @@
 				C1277611254748F200DBC6C4 /* Throwable.swift in Sources */,
 				C1FA6805261E38DC0063C21E /* UIStateDelegate.swift in Sources */,
 				C1277610254748F200DBC6C4 /* Logger.swift in Sources */,
+				C176BBEB269BA2C800347A9A /* YDManager+LiveNPS.swift in Sources */,
 				C149E80E2682B4100057F33E /* YDManager+PushNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

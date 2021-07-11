@@ -7,9 +7,8 @@
 #
 
 Pod::Spec.new do |spec|
-
   spec.name         = "YDUtilities"
-  spec.version      = "1.4.2"
+  spec.version      = "1.4.3"
   spec.summary      = "YDUtilities."
 
   spec.license          = "MIT"
