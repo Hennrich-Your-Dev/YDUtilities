@@ -9,19 +9,19 @@ import Foundation
 import YDExtensions
 
 public class YDManagerLiveNPS: Codable {
-  public let id: String
-  public let liveId: String
+  public let id: String?
+  public let spaceyId: String?
   public var question: String?
   public var answer: String?
 
   public init(
-    id: String,
-    liveId: String,
+    id: String?,
+    liveId: String?,
     question: String?,
     answer: String?
   ) {
     self.id = id
-    self.liveId = liveId
+    self.spaceyId = liveId
     self.question = question
     self.answer = answer
   }
@@ -32,7 +32,7 @@ public extension YDManager {
     // MARK: Properties
     public  static let shared = YDManager.LivesNPS()
     private let defaults = UserDefaults.standard
-    private var lives: [YDManagerLiveNPS] = []
+    private var livesNPS: [YDManagerLiveNPS] = []
 
     // MARK: Init
     private init() {
@@ -40,28 +40,28 @@ public extension YDManager {
             let saved = try? JSONDecoder().decode([YDManagerLiveNPS].self, from: data)
       else { return }
 
-      lives = saved
+      livesNPS = saved
     }
 
     // MARK: Actions
     private func save() {
-      guard let encoded = try? JSONEncoder().encode(lives) else { return }
+      guard let encoded = try? JSONEncoder().encode(livesNPS) else { return }
       defaults.set(encoded, forKey: YDConstants.UserDefaults.savedLiveNPS)
     }
 
     // MARK: Public
     public func add(_ nps: YDManagerLiveNPS) {
-      guard lives.firstIndex(where: { $0.liveId == nps.liveId && $0.id == nps.id }) == nil
+      guard livesNPS.firstIndex(where: { $0.spaceyId == nps.spaceyId && $0.id == nps.id }) == nil
       else { return }
 
-      lives.append(nps)
+      livesNPS.append(nps)
       save()
     }
 
-    public func get(id: String, liveId: String) -> YDManagerLiveNPS? {
-      return lives.first(
+    public func get(id: String?, spaceyId: String?) -> YDManagerLiveNPS? {
+      return livesNPS.first(
         where: {
-          $0.liveId == $0.liveId && $0.id == id
+          $0.spaceyId == spaceyId && $0.id == id
         }
       )
     }
