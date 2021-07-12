@@ -16,12 +16,12 @@ public class YDManagerLiveNPS: Codable {
 
   public init(
     id: String?,
-    liveId: String?,
+    spaceyId: String?,
     question: String?,
     answer: String?
   ) {
     self.id = id
-    self.spaceyId = liveId
+    self.spaceyId = spaceyId
     self.question = question
     self.answer = answer
   }
