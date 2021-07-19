@@ -70,14 +70,14 @@ public extension YDManager {
 
     public func get(id: String?, spaceyId: String?) -> YDManagerLiveNPS? {
       if liveIdEnabled {
-        return livesNPS.first(where: { $0.id == id })
+        return livesNPS.first(
+          where: {
+            $0.spaceyId == spaceyId && $0.id == id
+          }
+        )
       }
 
-      return livesNPS.first(
-        where: {
-          $0.spaceyId == spaceyId && $0.id == id
-        }
-      )
+      return livesNPS.first(where: { $0.id == id })
     }
   }
 }
